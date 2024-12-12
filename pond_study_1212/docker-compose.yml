@@ -1,0 +1,14 @@
+# docker-compose.yml
+version: "2"
+services:
+  server:
+    build: .
+    ports:
+      - "9000:9000"
+
+  client:
+    build: .
+    depends_on:
+      - server
+    # 클라이언트는 서버에 연결
+    command: sh -c "sleep 5 && nc server 9000"

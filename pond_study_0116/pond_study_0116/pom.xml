@@ -1,0 +1,8 @@
+<dependencies>
+    <!-- 다른 의존성이 있다면 그 아래에 추가 -->
+    <dependency>
+        <groupId>commons-net</groupId>
+        <artifactId>commons-net</artifactId>
+        <version>3.6</version>
+    </dependency>
+</dependencies>
